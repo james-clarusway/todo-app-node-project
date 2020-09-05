@@ -13,7 +13,6 @@ pipeline {
         }
         stage('Push Image to ECR Repo') {
             steps {
-                sh 'echo naber'
                 sh 'docker push 846133131154.dkr.ecr.eu-central-1.amazonaws.com/clarusway-repo/todo-app:latest'
             }
         }
