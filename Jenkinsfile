@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Push Image to ECR Repo') {
             steps {
-                sh 'aws ecr get-login-password --region eu-central-1 | docker login --username AWS --password-stdin "$ECR_REGISTRY"'
+                sh 'echo naber'
                 sh 'docker push 846133131154.dkr.ecr.eu-central-1.amazonaws.com/clarusway-repo/todo-app:latest'
             }
         }
